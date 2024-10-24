@@ -7,7 +7,6 @@ timeStart = datetime(2017, 10, 1, 0,0, 0);
 timeEnd = datetime(2017, 10, 31, 0, 0, 0);
 
 NCMLurl_awac6m = 'https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-6m/awac-6m.ncml';
-
 NCMLurl_awac11m = 'https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/awac-11m.ncml';
 
 
@@ -16,13 +15,17 @@ NCMLurl_awac11m = 'https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/
 % The associated website that you can see is the html: 
 % "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-6m/awac-6m.ncml.html"
 
-%% Part 2: Call your Function 
+%% Part 2: Call your function to load wave data 
 
 % You can call the output whatever you want & run it for more than one
 % url :) 
 [awac6m_waves] = getData(timeStart, timeEnd, NCMLurl_awac6m); 
 
 [awac11m_waves] = getData(timeStart, timeEnd, NCMLurl_awac11m); 
+
+%% Part 3: Call your function to load current data
+
+[output] = getCurrents(d1, d2, urlEnd);
 
 %% Part 3: Plot the Data ! 
 
