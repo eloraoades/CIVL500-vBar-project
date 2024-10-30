@@ -67,9 +67,9 @@ T2.TileSpacing = 'compact';
 T2.Padding = 'compact'; 
 
 nexttile()
-plot(awac4_curr.dateTime, awac4_curr.zAvgEast, 'b'); 
+plot(awac4_curr.dateTime, awac4_curr.zAverageEast, 'b'); 
 hold on; box on; 
-plot(awac4_curr.dateTime, awac4_curr.zAvgNorth, 'r'); 
+plot(awac4_curr.dateTime, awac4_curr.zAverageNorth, 'r'); 
 set(gca, 'FontName', 'cambria', 'FontSize', 16); 
 legend('East Current', 'North Current', ''); 
 ylabel('u (m/s)')
