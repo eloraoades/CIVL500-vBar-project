@@ -15,6 +15,7 @@ NCMLurl_awac4mCurr = 'https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanograp
 % The associated website that you can see is the html: 
 % "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-6m/awac-6m.ncml.html"
 
+
 %% Part 2: Call your function to load wave data 
 
 % You can call the output whatever you want & run it for more than one
