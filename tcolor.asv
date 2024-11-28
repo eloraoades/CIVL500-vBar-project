@@ -1,7 +1,7 @@
 function H = tcolor(x,y,c,varargin)
 % for use like pcolor but with c as a true color matrix (uses texturemap for speed)...
 %
-H=tcolor(x,y,c[,method])
+% H=tcolor(x,y,c[,method])
 %
 % valid methods are: 'corners','normal','triangles'
 %
@@ -15,10 +15,10 @@ H=tcolor(x,y,c[,method])
 % The slowest method is 'triangles'... (sort of like pcolor). But shading
 % interp works with it.
 %
-c=imread('C:\\Users\\kattr\\OneDrive - Queen''s University\\Queen''s\\Thesis\\FRF_20190903_1168_FRF_NAVD88_LARC_GPS_UTC_v20210823.csv');
-[x,y] = meshgrid(1:size(im,2),1:size(im,1));
-x=x+y/10; %skew the image
-H=tcolor(x,y,c,'corners');
+c=imread('C:\Users\kattr\OneDrive - Queen's University\Queen's\Thesis');
+%[x,y] = meshgrid(1:size(im,2),1:size(im,1));
+% x=x+y/10; %skew the image
+% H=tcolor(x,y,c,'corners')
 %
 % Aslak Grinsted - July 2003
 

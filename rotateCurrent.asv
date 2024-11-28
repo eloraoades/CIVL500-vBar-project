@@ -1,0 +1,29 @@
+
+E = awac4_curr.zAverageEast;
+N = awac4_curr.zAverageNorth; 
+C = sqrt((u0.^2)+(v0.^2));
+
+%E=uE+vE
+%N=uN+vN
+
+u = cosd(E)+cos
+
+
+
+figure()
+T2 = tiledlayout(2, 1); % << 3 rows, one column
+T2.TileSpacing = 'compact'; 
+T2.Padding = 'compact'; 
+
+nexttile()
+plot(awac4_curr.dateTime, u0, 'b'); 
+hold on; box on; 
+plot(awac4_curr.dateTime, v0, 'r'); 
+hold on; box on;
+plot(awac4_curr.dateTime, w0, 'g');
+set(gca, 'FontName', 'cambria', 'FontSize', 16); 
+yline(0); 
+legend('East Current', 'North Current','Total Current'); 
+ylabel('u (m/s)')
+ylim([-1.25 1.25]); 
+
